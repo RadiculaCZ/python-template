@@ -1,0 +1,27 @@
+[tool.poetry]
+name = ""
+version = "0.1.0"
+description = ""
+authors = [""]
+readme = "README.md"
+packages = [{include = ""}]
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.1"
+black = "^23.1.0"
+yapf = "^0.32.0"
+bandit = "^1.7.4"
+flake8 = "^6.0.0"
+mypy = "^1.0.0"
+pycodestyle = "^2.10.0"
+pydocstyle = "^6.3.0"
+pylint = "^2.16.1"
+ipython = "^8.10.0"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

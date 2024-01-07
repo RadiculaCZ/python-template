@@ -9,7 +9,10 @@
         "python.linting.enabled": true,
         "[python]": {
           "editor.formatOnSave": true,
-          "editor.defaultFormatter": "charliermarsh.ruff"
+          "editor.defaultFormatter": "charliermarsh.ruff",
+          "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+          }
         },
         "search.exclude": {
           "**/data": true
@@ -40,6 +43,5 @@
   "mounts": [
     "source=${localEnv:HOME}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,consistency=cached"
   ],
-
   "postCreateCommand": ".devcontainer/postCreate.sh"
 }

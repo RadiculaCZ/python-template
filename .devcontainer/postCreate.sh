@@ -23,3 +23,5 @@ poetry config virtualenvs.create true
 poetry config virtualenvs.in-project true
 
 poetry completions bash >> ~/.bash_completion
+echo "source ~/.bash_completion" >> ~/.bashrc
+echo "source /usr/share/bash-completion/completions/git" >> ~/.bashrc
